@@ -1,0 +1,4 @@
+tasks:
+  - name: Install Terraform Gitpod
+    before: |
+      source ./bin/install_terraform_cli
