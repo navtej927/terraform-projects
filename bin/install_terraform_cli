@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Download the latest version of Terraform
-TERRAFORM_VERSION="1.6.0" # Change to the desired version
+TERRAFORM_VERSION="1.9.5" # Change to the desired version
 curl -LO "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
 
 # Unzip the downloaded file
