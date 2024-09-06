@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
 
-echo "TerraPerra"
+# Download the latest version of Terraform
+TERRAFORM_VERSION="1.6.0" # Change to the desired version
+curl -LO "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
+
+# Unzip the downloaded file
+unzip "terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
+
+# Move the Terraform binary to /usr/local/bin
+sudo mv terraform /usr/local/bin/
+
+# Clean up
+rm "terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
